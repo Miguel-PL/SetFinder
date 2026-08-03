@@ -1,0 +1,19 @@
+Plantillas de referencia para SetFinder (Fase 2)
+===============================================
+
+Coloca aquí 6 archivos PNG (en subcarpetas, nombres exactos):
+
+templates/forma/
+  forma_oval.png
+  forma_rombo.png
+  forma_onda.png
+
+templates/relleno/
+  relleno_solido.png
+  relleno_rayado.png
+  relleno_vacio.png
+
+Guía paso a paso: PLANTILLAS_GUIA.md (raíz del proyecto)
+
+La app NO funcionará con plantillas hasta que los 6 archivos existan.
+Mientras falten, usará el reconocimiento heurístico antiguo como respaldo.

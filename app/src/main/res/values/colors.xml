@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Tema Material3 (claro) -->
+    <color name="primary">#5B4BF0</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#E4DFFF</color>
+    <color name="on_primary_container">#1A0080</color>
+    <color name="secondary">#625B71</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#E8DEF8</color>
+    <color name="on_secondary_container">#1D192B</color>
+    <color name="error">#BA1A1A</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#FFDAD6</color>
+    <color name="on_error_container">#410002</color>
+    <color name="surface">#FDFBFF</color>
+    <color name="on_surface">#1B1B21</color>
+    <color name="surface_variant">#E7E5EC</color>
+    <color name="on_surface_variant">#49454F</color>
+    <color name="outline">#79747E</color>
+    <color name="fondo_pantalla">#F5F4FB</color>
+
+    <!-- Cabecera -->
+    <color name="header_inicio">#4F46E5</color>
+    <color name="header_fin">#8B5CF6</color>
+    <color name="header_titulo">#FFFFFF</color>
+    <color name="header_tagline">#E9E6FF</color>
+    <color name="boton_ayuda_fondo">#33FFFFFF</color>
+    <color name="boton_ayuda_texto">#FFFFFF</color>
+
+    <!-- Celdas / cartas -->
+    <color name="carta_celda_fondo">#FFFFFF</color>
+    <color name="carta_celda_borde">#E1DFEC</color>
+    <color name="celda_numero_fondo">#ECE9FF</color>
+    <color name="celda_numero_texto">#3B2FA0</color>
+    <color name="celda_sumario_texto">#4A4652</color>
+    <color name="carta_celda_set_fondo">#DCFCE7</color>
+    <color name="carta_celda_set_borde">#16A34A</color>
+
+    <!-- Resultado -->
+    <color name="resultado_ok_fondo">#E5F6EC</color>
+    <color name="resultado_ok_borde">#22C55E</color>
+    <color name="resultado_ok_texto">#166534</color>
+    <color name="resultado_no_fondo">#FDE7E7</color>
+    <color name="resultado_no_borde">#EF4444</color>
+    <color name="resultado_no_texto">#991B1B</color>
+
+    <color name="texto_secundario">#6B6772</color>
+</resources>

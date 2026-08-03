@@ -1,0 +1,7 @@
+<resources>
+    <!-- Android 12+: colorea el splash del sistema para que enlace con la portada -->
+    <style name="Theme.SetFinder.Splash" parent="Theme.SetFinder">
+        <item name="android:windowBackground">@drawable/fondo_splash</item>
+        <item name="android:windowSplashScreenBackground">@color/header_inicio</item>
+    </style>
+</resources>

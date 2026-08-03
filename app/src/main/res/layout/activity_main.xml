@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Cabecera con degradado -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-16dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="-16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/fondo_cabecera"
+            android:paddingTop="24dp"
+            android:paddingBottom="28dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/titulo_setfinder"
+                    android:textColor="@color/header_titulo"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="@string/cabecera_subtitulo"
+                    android:textColor="@color/header_tagline"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/button_ayuda"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fondo_boton_ayuda"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="@string/boton_ayuda"
+                android:gravity="center"
+                android:text="@string/boton_ayuda_interrogante"
+                android:textColor="@color/boton_ayuda_texto"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!-- Selector de cantidad de cartas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_cantidad_cartas"
+            android:textColor="@color/texto_secundario"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/grupo_cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:checkedButton="@id/boton_12"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <Button
+                android:id="@+id/boton_12"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="104dp"
+                android:text="@string/opcion_12"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/boton_15"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="104dp"
+                android:text="@string/opcion_15"
+                android:textAllCaps="false" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/hint_toca_carta"
+            android:textColor="@color/texto_secundario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <!-- Cuadrícula de cartas -->
+        <GridLayout
+            android:id="@+id/grid_cartas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/hint_foto_opcional"
+            android:textColor="@color/texto_secundario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <Button
+            android:id="@+id/button_hacer_foto"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:text="@string/hacer_foto"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_camara" />
+
+        <ImageView
+            android:id="@+id/image_foto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/fondo_carta_celda"
+            android:contentDescription="@string/sin_foto"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            tools:ignore="ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_deteccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="@color/texto_secundario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="12 cartas detectadas. Revisa la cuadrícula." />
+
+        <TextView
+            android:id="@+id/label_miniaturas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/label_miniaturas"
+            android:textColor="@color/texto_secundario"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <GridLayout
+            android:id="@+id/grid_miniaturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="3"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_comprobar"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:minHeight="48dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/comprobar_sets"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_buscar" />
+
+        <!-- Tarjeta de resultado -->
+        <LinearLayout
+            android:id="@+id/layout_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/fondo_resultado_ok"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/resultado_ok_texto"
+                android:textStyle="bold"
+                tools:text="@string/hay_sets" />
+
+            <Button
+                android:id="@+id/button_ver_sets"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:minHeight="48dp"
+                android:text="@string/ver_sets"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                app:icon="@drawable/ic_ojo"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/text_detalle_sets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/resultado_ok_texto"
+                android:visibility="gone"
+                tools:text="1, 4 y 12&#10;2, 6 y 9"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

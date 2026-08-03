@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Valores mostrados en spinners; en Java el índice (0..2) se mapea a Carta -->
+    <string-array name="opciones_numero">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="opciones_color">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Morado</item>
+    </string-array>
+    <string-array name="opciones_forma">
+        <item>Óvalo</item>
+        <item>Rombo</item>
+        <item>Onda</item>
+    </string-array>
+    <string-array name="opciones_relleno">
+        <item>Sólido</item>
+        <item>Rayado</item>
+        <item>Vacío</item>
+    </string-array>
+</resources>

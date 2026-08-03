@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ayuda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-16dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="-16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/fondo_cabecera"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/ayuda_titulo"
+                android:textColor="@color/header_titulo"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/ayuda_intro"
+            android:textColor="@color/on_surface"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/ayuda_paso1"
+            android:textColor="@color/texto_secundario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/ayuda_paso2"
+            android:textColor="@color/texto_secundario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/ayuda_paso3"
+            android:textColor="@color/texto_secundario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/ayuda_paso4"
+            android:textColor="@color/texto_secundario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/ayuda_paso5"
+            android:textColor="@color/texto_secundario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/fondo_resultado_ok"
+            android:lineSpacingExtra="2dp"
+            android:padding="14dp"
+            android:text="@string/ayuda_regla"
+            android:textColor="@color/resultado_ok_texto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/button_volver_ayuda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:minHeight="48dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="@string/ayuda_volver"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>

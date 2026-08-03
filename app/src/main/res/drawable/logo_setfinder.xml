@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="24dp"
+    android:viewportWidth="60"
+    android:viewportHeight="24">
+
+    <!-- Óvalo -->
+    <path
+        android:pathData="M10,4.5 C6,4.5 4.5,7.8 4.5,12 C4.5,16.2 6,19.5 10,19.5 C14,19.5 15.5,16.2 15.5,12 C15.5,7.8 14,4.5 10,4.5 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round" />
+
+    <!-- Rombo -->
+    <path
+        android:pathData="M30,4 L35.5,12 L30,20 L24.5,12 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:strokeLineJoin="round" />
+
+    <!-- Onda -->
+    <path
+        android:pathData="M45,14 Q47,9 50,14 T55,14"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round" />
+</vector>

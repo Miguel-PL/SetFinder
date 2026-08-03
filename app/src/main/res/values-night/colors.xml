@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema Material3 (oscuro) -->
+    <color name="primary">#C6BFFF</color>
+    <color name="on_primary">#2C1678</color>
+    <color name="primary_container">#4B3BCF</color>
+    <color name="on_primary_container">#E4DFFF</color>
+    <color name="secondary">#CCC2DC</color>
+    <color name="on_secondary">#332D42</color>
+    <color name="secondary_container">#4A4458</color>
+    <color name="on_secondary_container">#E8DEF8</color>
+    <color name="error">#FFB4AB</color>
+    <color name="on_error">#690005</color>
+    <color name="error_container">#93000A</color>
+    <color name="on_error_container">#FFDAD6</color>
+    <color name="surface">#131318</color>
+    <color name="on_surface">#E4E1E9</color>
+    <color name="surface_variant">#46464F</color>
+    <color name="on_surface_variant">#C7C4D0</color>
+    <color name="outline">#918F99</color>
+    <color name="fondo_pantalla">#131318</color>
+
+    <!-- Cabecera -->
+    <color name="header_inicio">#4F46E5</color>
+    <color name="header_fin">#7C3AED</color>
+    <color name="header_titulo">#FFFFFF</color>
+    <color name="header_tagline">#D9D2FF</color>
+    <color name="boton_ayuda_fondo">#33FFFFFF</color>
+    <color name="boton_ayuda_texto">#FFFFFF</color>
+
+    <!-- Celdas / cartas -->
+    <color name="carta_celda_fondo">#1E1D26</color>
+    <color name="carta_celda_borde">#34323D</color>
+    <color name="celda_numero_fondo">#4B3BCF</color>
+    <color name="celda_numero_texto">#E4DFFF</color>
+    <color name="celda_sumario_texto">#C7C4D0</color>
+    <color name="carta_celda_set_fondo">#14301F</color>
+    <color name="carta_celda_set_borde">#22C55E</color>
+
+    <!-- Resultado -->
+    <color name="resultado_ok_fondo">#14301F</color>
+    <color name="resultado_ok_borde">#22C55E</color>
+    <color name="resultado_ok_texto">#86EFAC</color>
+    <color name="resultado_no_fondo">#3A1616</color>
+    <color name="resultado_no_borde">#EF4444</color>
+    <color name="resultado_no_texto">#FCA5A5</color>
+
+    <color name="texto_secundario">#B9B6C2</color>
+</resources>

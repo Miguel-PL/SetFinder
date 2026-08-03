@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_splash">
+
+    <LinearLayout
+        android:id="@+id/contenido_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="37dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_setfinder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/titulo_setfinder"
+            android:textColor="@color/header_titulo"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cabecera_subtitulo"
+            android:textColor="@color/header_tagline"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="28dp"
+            android:indeterminateTint="@color/header_titulo"
+            android:indeterminateTintMode="src_in" />
+    </LinearLayout>
+
+</FrameLayout>
