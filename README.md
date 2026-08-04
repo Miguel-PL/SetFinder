@@ -32,28 +32,27 @@ Tres cartas forman un **SET** si, para **cada** atributo, los 3 valores son **to
 
 ### Introducción manual
 
-<img width="698" height="1600" alt="WhatsApp Image 2026-08-04 at 18 13 28" src="https://github.com/user-attachments/assets/4ff67ab4-4ebf-46f9-b093-742239d5be87" />
+<img width="250" height="573" alt="Introduccion manual" src="https://github.com/user-attachments/assets/4ff67ab4-4ebf-46f9-b093-742239d5be87" />
 
 ### Editado de carta
 
-<img width="698" height="1600" alt="WhatsApp Image 2026-08-04 at 18 16 30" src="https://github.com/user-attachments/assets/ea59541c-c33d-4d41-9fce-135884df230a" />
-
+<img width="250" height="573" alt="Editar carta" src="https://github.com/user-attachments/assets/ea59541c-c33d-4d41-9fce-135884df230a" />
 
 ### Reconocimiento mediante fotografía
 
-<img width="698" height="1600" alt="WhatsApp Image 2026-08-04 at 18 10 40 (2)" src="https://github.com/user-attachments/assets/cb4028fd-3d80-4f4b-a366-9bba0c4ecd16" />
+<img width="250" height="573" alt="Reconocimiento por foto" src="https://github.com/user-attachments/assets/cb4028fd-3d80-4f4b-a366-9bba0c4ecd16" />
 
 ### Cartas detectadas automáticamente
 
-<img width="698" height="1600" alt="WhatsApp Image 2026-08-04 at 18 10 40 (1)" src="https://github.com/user-attachments/assets/08a1d4d9-ffe4-4316-9eb6-272c537b1ad7" />
+<img width="250" height="573" alt="Cartas detectadas" src="https://github.com/user-attachments/assets/08a1d4d9-ffe4-4316-9eb6-272c537b1ad7" />
 
 ### SETs encontrados
 
-<img width="698" height="1600" alt="WhatsApp Image 2026-08-04 at 18 10 40" src="https://github.com/user-attachments/assets/ad3dbfe5-1d0f-433f-878f-1d490c8fad6d" />
+<img width="250" height="573" alt="SETs encontrados" src="https://github.com/user-attachments/assets/ad3dbfe5-1d0f-433f-878f-1d490c8fad6d" />
 
 ### Ayuda integrada
 
-<img width="698" height="1600" alt="WhatsApp Image 2026-08-04 at 18 10 40 (3)" src="https://github.com/user-attachments/assets/e4081a95-e9f2-4b07-aa9e-c1b045ecbf3d" />
+<img width="250" height="573" alt="Ayuda" src="https://github.com/user-attachments/assets/e4081a95-e9f2-4b07-aa9e-c1b045ecbf3d" />
 
 ## Requisitos
 
