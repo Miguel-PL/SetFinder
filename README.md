@@ -142,4 +142,4 @@ SetFinder2/
 
 ## Licencia
 
-Proyecto personal. Sin licencia definida todavía.
+Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
