@@ -1,4 +1,4 @@
-# Guía de plantillas — SetFinder (Fase 2b)
+# Guía de plantillas — SetFinder
 
 La app compara cada carta recortada con **6 imágenes de referencia** que tú debes crear.
 
@@ -74,7 +74,7 @@ Consejos:
 ## Paso 5: Verificar
 
 1. Coloca los 6 PNG en las carpetas indicadas.
-2. `.\gradlew.bat installDebug` (o Run en Android Studio).
+2. `.\gradlew.bat :app:installDebug` (o Run en Android Studio).
 3. Al abrir la app:
    - Si **faltan** plantillas → verás un aviso y usará el método antiguo.
    - Si **están las 6** → usará plantillas automáticamente.
@@ -84,7 +84,7 @@ Consejos:
 
 ## Paso 6: Afinar (si algo sigue fallando)
 
-1. Sustituye solo la plantilla que falla (ej. `forma/onda.png`).
+1. Sustituye solo la plantilla que falla (ej. `forma/forma_onda.png`).
 2. Rebuild + reinstalar.
 3. Prueba de nuevo.
 
@@ -92,7 +92,7 @@ Si una forma y un relleno se confunden, usa plantillas **más típicas** (símbo
 
 ---
 
-## Cómo funciona por dentro (Fase 2b)
+## Cómo funciona por dentro
 
 ```
 Recorte de carta
@@ -107,7 +107,7 @@ Recorte de carta
 
 Clases: `TemplateLibrary`, `CardTemplateMatcher`, `SymbolAnalyzer`, `ShapeAnalyzer`, `FillCalibrator`.
 
-**Importante (Fase 2b):** Las plantillas deben ser **fotos reales** de cartas físicas con tu móvil, no capturas de la sección "Cartas recortadas" de la app. Si usas capturas de pantalla, los umbrales calibrados no coincidirán con las fotos de cámara.
+**Importante:** Las plantillas deben ser **fotos reales** de cartas físicas con tu móvil, no capturas de la sección "Cartas recortadas" de la app. Si usas capturas de pantalla, los umbrales calibrados no coincidirán con las fotos de cámara.
 
 ---
 

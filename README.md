@@ -15,6 +15,12 @@ Introduce las cartas a mano o tómalas en foto y la app te dirá si en esa combi
 - **Estado persistente**: la partida (cartas, foto y resultados) no se pierde al rotar la pantalla.
 - **Pantalla de ayuda** integrada con las reglas del juego.
 
+## Limitaciones
+
+- El reconocimiento por foto **solo estima color y forma**; la **cantidad y el relleno** los introduce el usuario a mano.
+- El reconocimiento depende de las condiciones de la foto (iluminación y encuadre).
+- El modo con plantillas requiere las **6 imágenes PNG** en `assets/templates/`; si faltan, la app avisa al arrancar y usa el reconocedor heurístico.
+
 ## Reglas del juego (resumen)
 
 Cada carta tiene 4 atributos, cada uno con 3 valores posibles:
@@ -64,11 +70,11 @@ Tres cartas forman un **SET** si, para **cada** atributo, los 3 valores son **to
 
 Desde Android Studio:
 
-1. Abre la carpeta `SetFinder2`.
+1. Abre en Android Studio la carpeta raíz del proyecto (la que contiene `settings.gradle` y el módulo `app`).
 2. Espera a que Gradle sincronice las dependencias.
 3. Conecta un dispositivo o inicia un emulador y pulsa **Run**.
 
-O por línea de comandos:
+O por línea de comandos (en Windows `.\gradlew.bat`; en macOS/Linux `./gradlew`):
 
 ```bash
 # APK de depuración
@@ -102,7 +108,7 @@ El pipeline de visión usa OpenCV: conversión a HSV → máscara por color → 
 ## Estructura del proyecto
 
 ```
-SetFinder2/
+SetFinder/
 ├── app/src/main/java/com/mipel/setfinder/
 │   ├── MainActivity.java          # Pantalla principal y flujo de interacción
 │   ├── SplashActivity.java        # Pantalla de portada (launcher)
@@ -124,7 +130,7 @@ SetFinder2/
 │   ├── TemplateLibrary.java       # Carga de plantillas desde assets
 │   └── TemplateMatchUtils.java    # Comparación de siluetas (IoU)
 └── app/src/main/res/
-    ├── layout/                    # activity_main, actividad_ayuda, diálogos...
+    ├── layout/                    # activity_main, activity_ayuda, diálogos...
     ├── values/ y values-night/    # Tema Material 3 claro/oscuro
     └── drawable/                  # Fondos, iconos, logo vectorial
 ```
@@ -138,7 +144,7 @@ SetFinder2/
 - **Lenguaje**: Java 11
 - **UI**: Android Views + Material Components 3 (tema claro/oscuro)
 - **Visión**: OpenCV Android 4.9.0
-- **Build**: Gradle + AGP 8.10
+- **Build**: Gradle + Android Gradle Plugin 8.10.1
 
 ## Licencia
 
